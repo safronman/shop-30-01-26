@@ -3,7 +3,8 @@ import axios from 'axios';
 import type {ProductType} from './BestSellers.tsx';
 import rating from './assets/img/rating.svg'
 import cartWhite from './assets/img/cartWhite.svg'
-import {useParams} from 'react-router';
+import arrowBack from './assets/img/arrowBack.svg'
+import {Link, useParams} from 'react-router';
 
 export const Product = () => {
 
@@ -32,7 +33,12 @@ export const Product = () => {
 
   return (
     <div>
-      <div>Заглушка. Понадобится чуть позже. Не удаляйте :)</div>
+      <div className="arrowBack">
+        <Link to={"/"}>
+          <img src={arrowBack} alt="arrowBack" />
+          Back to Best Seller
+        </Link>
+      </div>
 
       <div className="product">
         <img src={product.image} alt=""/>
