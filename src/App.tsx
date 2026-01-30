@@ -1,11 +1,13 @@
 import './App.css'
+import {Header} from './Header.tsx';
 
 function App() {
 
   return (
-    <>
-      Shop
-    </>
+    <div className={'appContainer'}>
+      <Header/>
+      <h1 style={{color: 'darkred'}}>Shop</h1>
+    </div>
   )
 }
 
